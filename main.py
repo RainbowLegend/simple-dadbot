@@ -44,16 +44,20 @@ async def on_message(message):
 
     if "i'm" in message.content.lower():
         res = message.content.lower().split("i'm")
-
         await message.channel.send(f'hi {res[1]} im dadbot')
+      
     elif "im" in message.content.lower():
         res = message.content.lower().split("im")
-
         await message.channel.send(f'hi {res[1]} im dadbot')
+        
     elif "i am" in message.content.lower():
         res = message.content.lower().split("i am")
-
         await message.channel.send(f'hi {res[1]} im dadbot')
+    
+    elif "i m" in message.content.lower():
+        res = message.content.lower().split("i m")
+        await message.channel.send(f'hi {res[1]} im dadbot')
+        
     else:
         await bot.process_commands(message)
 
